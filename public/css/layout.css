@@ -1,0 +1,50 @@
+@import url('variables.css');
+
+/* ========== Header ========== */
+header > nav:first-child > h1 {
+  float: left;
+  padding: 1em;
+}
+
+header > nav:first-child > i {
+  float: right;
+  padding: .75em;
+}
+
+header > nav:nth-child(2) {
+  clear: both;
+}
+
+header > nav:nth-child(2) > ul {
+  clear: both;
+  text-align: center;
+  font-weight: bold;
+  overflow: auto;
+}
+
+header > nav:nth-child(2) li {
+  float: left;
+  width: 50%;
+  padding: 1em 0;
+}
+
+/* ========== footer ========== */
+footer > nav > ul {
+  text-align: center;
+  overflow: auto;
+}
+
+footer > nav li {
+  float: left;
+  width: calc(100vw/3);
+  padding: 1em 0;
+}
+
+footer > nav li:nth-child(2) {
+  width: calc((100vw/3) - 2px);
+}
+
+footer > p {
+  padding: 1em;
+  text-align: center;
+}

@@ -1,0 +1,3 @@
+header h1:hover, header i:hover, header nav:nth-child(2):hover, footer > nav:hover {
+  cursor: pointer;
+}
