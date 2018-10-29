@@ -1,0 +1,41 @@
+@import url('variables.css');
+
+/* ========== Header ========== */
+header > nav:first-child > i {
+  font-size: 1.25em;
+}
+
+header > nav:nth-child(2) li:first-child {
+  background-color: var(--red-color);
+  color: white;
+}
+
+header > nav:nth-child(2) li:last-child {
+  background-color: var(--light-grey-color);
+  color: grey;
+}
+
+/* ========== footer ========== */
+footer > nav > ul {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  font-size: .9em;
+  background-color: var(--light-grey-color);
+  color: grey;
+}
+
+footer > nav li:first-child {
+  background-color: var(--red-color);
+  color: white;
+}
+
+footer > nav li:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+footer > p {
+  font-size: .75em;
+  padding: 1em;
+  text-align: center;
+}

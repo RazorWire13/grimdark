@@ -1,0 +1,22 @@
+@import url('variables.css');
+
+html, body {
+  height: 100vh;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ========== Header ========== */
+header {
+  background-color: var(--grey-color);
+  color: var(--orange-color);
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: var(--red-color);
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
