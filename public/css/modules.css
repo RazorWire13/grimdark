@@ -15,6 +15,11 @@ header > nav:nth-child(2) li:last-child {
   color: grey;
 }
 
+/* ========== main ========== */
+main > div {
+  border: 1px solid black;
+}
+
 /* ========== footer ========== */
 footer > nav > ul {
   border-bottom: 1px solid black;

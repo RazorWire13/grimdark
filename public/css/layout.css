@@ -28,6 +28,12 @@ header > nav:nth-child(2) li {
   padding: 1em 0;
 }
 
+/* ========== main ========== */
+main {
+  width: 90%;
+  margin: 2em auto;
+}
+
 /* ========== footer ========== */
 footer > nav > ul {
   text-align: center;

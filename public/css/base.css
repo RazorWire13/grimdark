@@ -6,13 +6,44 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ========== Header ========== */
+/* ========== header ========== */
 header {
   background-color: var(--grey-color);
   color: var(--orange-color);
 }
 
-/* ========== Footer ========== */
+/* ========== main ========== */
+main {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+th, tr {
+  height: 1.5em;
+  border: none;
+}
+
+th {
+  padding-top: 8px;
+}
+
+table input {
+  width: 4em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  text-align: center;
+  height: 1.5em;
+}
+
+
+/* ========== footer ========== */
 footer {
   background-color: var(--red-color);
   color: white;

@@ -12,4 +12,48 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+  <!-- Handlebars template for Attacker Stats -->
+  <script id="attack-data-template" type="text/x-handlebars-template">
+    <div>
+      <input type="text" placeholder="Model Type #{{attackModelTypeCounter}}" />
+      <table>
+        <tr>
+          <th>Models</th>
+          <th>Shots Per</th>
+        </tr>
+        
+        <tr>
+          <td><input name="number-of-models" type="tel" /> </td>
+          <td><input name="shots-per-model" type="tel" /> </td>
+        </tr>
+        
+        <tr>
+          <th>Blstc Skill</th>
+          <th>Wpn Str</th>
+        </tr>
+        
+        <tr>
+          <td><input name="ballistic-skill" type="tel" placeholder="auto" /> </td>
+          <td><input name="weapon-strength" type="tel" /> </td>
+        </tr>
+
+        <tr>
+          <th>Wpn Ap</th>
+          <th>Wpn Dmg</th>
+        </tr>
+
+        <tr>
+          <td><input name="weapon-armor-penetration" type="tel" /> </td>
+          <td><input name="weapon-damage" type="tel" /> </td>
+        </tr>
+      </table>
+
+      <ul>
+        <li><button>Delete</button></li>
+        <li><button>Duplicate</button></li>
+        <li><button>Modify</button></li>
+      </ul>
+    </div>
+  </script>
 </head>
