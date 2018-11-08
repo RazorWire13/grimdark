@@ -3,10 +3,25 @@
 const attackModels = [];
 const defendModels = [];
 
-// Calculates total number of wounds //
+// Calculates total number of defenders casualties taken //
+const totalCasualties = () => {
+  return Math.floor(totalDamageDealt / defendModels.wounds);
+}
+
+// Calculates total damage caused by a model type //
+const totalDamageDealt = () => {
+  return totalNumberOfUnsavedWounds * weaponDamage;
+};
+
+// Calculates total number of unsaved wounds after saves //
+const totalNumberOfUnsavedWounds = () => {
+  return totalNumberOfWounds() * percentageToFailSave();
+};
+
+// Calculates total number of wounds caused prior to saves //
 const totalNumberOfWounds = () => {
-    return totalNumberOfHits() * totalToWoundPercentage();
-  };
+  return totalNumberOfHits() * totalToWoundPercentage();
+};
 
 // Calculates total number of hits //
 const totalNumberOfHits = () => {
@@ -49,7 +64,6 @@ const rerollToHit = () => {
   return 0;
 };
 
-
 // Calculates total percentage to wound //
 const totalToWoundPercentage = (i) => {
   return unmodifiedToWound(i) + modifierToWound() + rerollToWound();
@@ -80,3 +94,28 @@ const modifierToWound = () => {
 const rerollToWound = () => {
   return 0;
 };
+
+// Translates save value to a percentage to fail a save //
+const percentageToFailSave = (saveValue) => {
+  switch (saveValue) {
+  case 2:
+    return (1/6);
+  case 3:
+    return (2/6);
+  case 4:
+    return (3/6);
+  case 5:
+    return (4/6);
+  case 6:
+    return (5/6);
+  default:
+    return (6/6);
+  }
+};
+
+// Calculates the defender's chance to fail a save //
+const bestSaveSelector = (armorSave, invlunSave) => armorSave < invlunSave ? armorSave : invlunSave;
+
+// Calculates saves after any modifiers are applied //
+const modifiedSave = (save, saveModifier) => save + saveModifier;
+
