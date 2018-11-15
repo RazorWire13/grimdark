@@ -12,6 +12,8 @@
   + React / JSX
   + Extended JavaScript (EJS)
   + HTML / CSS
+  + Trello (used for Project Management)
+  + GoogleDrawings (used for wireframing)
   
 # Instructions
 - To follow as project enters alpha testing
