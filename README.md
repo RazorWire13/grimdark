@@ -4,7 +4,7 @@
 # Project Team
 - Dave Muench & Evan Slaton
 
-# Versions
+# Versioning
 - 0.0.1 Completed initial coding of formulas
 
 # Technologies
