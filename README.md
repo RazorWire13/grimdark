@@ -1,14 +1,17 @@
 # GrimDarkRolla
-- GrimDarkRolla is a mobile-first designed webapp that calculates statisical averages for damage output of units used in the Warhammer 40,000 tabletop wargame.
+- GrimDarkRolla (aka GDR) is a mobile-first designed webapp that calculates statisical averages for damage output of units used in the Warhammer 40,000 tabletop wargame.
 
 # Project Team
 - Dave Muench & Evan Slaton
 
+# Versions
+- 0.0.1 Completed initial coding of formulas
 
-- A description of the project
-- The overall problem domain and how the project solves those problems
-- Semantic versioning, beginning with version 1.0.0 and incremented as changes are made
-- A list of any libraries, frameworks, or packages that your application requires in order to properly function
-- Instructions that the user may need to follow in order to get your application up and running on their own computer
-- Clearly defined API endpoints with sample responses
-- Clearly defined database schemas
+# Technologies
+- GDR makes use of the following:
+  + React / JSX
+  + Extended JavaScript (EJS)
+  + HTML / CSS
+  
+# Instructions
+- To follow as project enters alpha testing
