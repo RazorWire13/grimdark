@@ -71,7 +71,7 @@ const totalToWoundPercentage = (i) => {
 
 // Translates strength vs toughness as a percentage to successfully wound //
 const unmodifiedToWound = (atkStrength, defToughness) => {
-  switch (atkStrength, defToughness) {
+  switch (true) {
   case (atkStrength >= (defToughness * 2)):
     return (5/6);
   case (atkStrength > defToughness):
@@ -82,7 +82,7 @@ const unmodifiedToWound = (atkStrength, defToughness) => {
     return (1/6);
   case (atkStrength < defToughness):
     return (2/6);
-  case 'auto':
+  default:
     return (6/6);
   }
 };
@@ -114,7 +114,7 @@ const percentageToFailSave = (saveValue) => {
 };
 
 // Calculates the defender's chance to fail a save //
-const bestSaveSelector = (armorSave, invlunSave) => armorSave < invlunSave ? armorSave : invlunSave;
+const bestSaveSelector = (armorSave, invulnSave) => armorSave < invulnSave ? armorSave : invulnSave;
 
 // Calculates saves after any modifiers are applied //
 const modifiedSave = (save, saveModifier) => save + saveModifier;
